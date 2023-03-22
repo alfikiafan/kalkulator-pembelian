@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kalkulator Pembelian Barang</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Kalkulator Pembelian Barang</h1>
+		</header>
+		<label for="harga">Harga Barang:</label>
+		<input type="number" id="harga" min="0" step="100" name="harga">
+		<label for="jumlah">Jumlah Barang:</label>
+		<input type="number" id="jumlah" min="0" name="jumlah">
+		<label for="diskon">Persentase Diskon (%):</label>
+		<input type="number" id="diskon" min="0" name="diskon">
+		<button onclick="hitung()">Hitung Harga Setelah Diskon</button>
+		<div id="hasil"></div>
+	</body>
+</html>
