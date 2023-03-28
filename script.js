@@ -8,6 +8,7 @@ function hitung() {
     var total = harga * jumlah * (1 - diskon/100);
     if (diskon > 100) {
         alert("Diskon maksimal 100%");
+        total = 0;
     }
     total = isNaN(total) ? 0 : total;
 
