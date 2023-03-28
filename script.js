@@ -6,6 +6,9 @@ function hitung() {
 
     // Menghitung total harga dengan diskon
     var total = harga * jumlah * (1 - diskon/100);
+    if (diskon > 100) {
+        alert("Diskon maksimal 100%");
+    }
     total = isNaN(total) ? 0 : total;
 
     // Menampilkan hasil pada elemen dengan id "total"
